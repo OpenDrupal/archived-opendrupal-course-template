@@ -8,8 +8,11 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		sass: {
-			src: 'css/source/open-drupal.scss',
-			dest: 'css/open-drupal.css'
+			dist: {
+				files: {
+						'css/open-drupal.css': 'css/source/open-drupal.scss'
+				}
+			}
 		},
 
 		watch: {
