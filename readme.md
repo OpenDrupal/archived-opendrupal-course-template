@@ -34,3 +34,7 @@ The result of completed exercises. To be used as reference, study or copy/paste 
 ## Slides
 Directory: /slide-foundation
 The reveal.js framework for slides with Open Drupal styling. Reveal.js is included as node package and stored in the repository to 
+
+## CSS/SCSS Development
+Directory: /slide-foundation
+You can update the source stylesheet of the template by editing open-drupal.scss found in /css/source . For this directory Grunt is already setup to watch for changes, run `gulp watch` to automatically compile scss changes to the css.
