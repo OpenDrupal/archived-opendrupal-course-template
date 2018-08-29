@@ -4,7 +4,7 @@ Use this template to start a new Open Drupal course. Create a complete package w
 Open Drupal materials are designed to be used by an knowlegable trainer to train others, and may therefore not be suitable for self study.
 
 ## Contents
-1. Files
+1. [Files](#files)
    1. [Introduction](#introduction)
    2. [Set-up](#setup)
    3. [Lessons](#lessons)
@@ -13,7 +13,7 @@ Open Drupal materials are designed to be used by an knowlegable trainer to train
    6. [Results](#results)
 2. [Slides setup](#slides-setup)
 
-# Files
+# <a href="#files">Files</a>
 Use index.html for the slides of a small training course or as index for attendees of a larger course. lesson-1.html, lesson-2.html, etc for individual lessons of larger courses.
 
 ## <a href="#introduction">Introduction</a>
