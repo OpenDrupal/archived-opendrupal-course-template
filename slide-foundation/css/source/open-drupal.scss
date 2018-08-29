@@ -3,4 +3,63 @@
 @import "../../node_modules/reveal.js/css/theme/template/settings";
 
 // For now, use the white theme.
-@import "../../node_modules/reveal.js/css/theme/source/white"
+@import "../../node_modules/reveal.js/css/theme/source/white";
+
+
+// Drupal colours
+$c-drupal-blue-dark: #0678BE;
+$c-drupal-blue-light: #53B0EB;
+$c-drupal-blue-light: #53B0EB;
+$c-drupal-yellow-light: #E6FCB6;
+$c-drupal-orange: #FFE69F;
+$c-drupal-green: #D4EFCC;
+$c-drupal-green-lime: #96BC44;
+$c-drupal-red: #EBCCCC;
+
+// Grayscale colours
+$c-off-black: #222222;
+
+.reveal {
+  color: $c-off-black;
+
+  h1 {
+    color: $c-drupal-blue-dark;
+    text-shadow: 1px 1px 0px lighten($c-drupal-blue-dark, 40%);
+    font-size: 2em;
+  }
+
+  a {
+    color: $c-drupal-blue-light;
+    text-decoration: underline dotted transparentize($c-drupal-blue-light, 0.1);
+
+    &:hover {
+      text-decoration: underline $c-drupal-blue-light;
+    }
+  }
+
+
+  blockquote {
+    background: $c-drupal-yellow-light;
+    border: 2px solid darken($c-drupal-yellow-light, 10%);
+    color: transparentize($c-off-black, 0.1);
+    font-size: 90%;
+  }
+
+
+  // Some classes if you want to use custom HTML in your markdown
+  .green-text {
+    background: $c-drupal-green;
+    padding: 12px 16px;
+    border-left: 8px solid darken($c-drupal-green, 20%);
+    border-radius: 4px;
+  }
+
+  .red-text {
+    background: $c-drupal-red;
+    padding: 12px 16px;
+    border-left: 8px solid darken($c-drupal-red, 20%);
+    border-radius: 4px;
+  }
+
+
+}
