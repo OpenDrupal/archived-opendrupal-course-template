@@ -44,6 +44,7 @@ The result of completed exercises. To be used as reference, study or copy/paste 
 # <a href="#slides-setup">Slides setup</a>
 *Directory: /slide-foundation*  
 The reveal.js framework is used for slides with Open Drupal styling. Reveal.js is included as node package and stored in the repository too.  
-**Note:** You will need a server for showing the slides. You can use your local VM/Docker setup or use Node, but by default the repo does not contain a server solution. This is because the slide's contents are using markdown.
+**Note for Chrome users:** You will need a server for showing the slides. You can use your local VM/Docker setup or use Node, but by default the repo does not contain a server solution. This is because the slide's contents are using markdown and Google Chrome does not allow for JS scripts to access local files by default.
+Alternatively use Mozilla Firefox which currently has been tested and works to just open the slides directly in the browser.
 
 If it's the first time the repo is used you will need to run `npm install` in this directory before you can use Grunt. Grunt is already setup to watch for changes, run `grunt watch` to automatically compile scss changes to the css. You can update the source stylesheet of the template by editing open-drupal.scss found in `/css/source`.
