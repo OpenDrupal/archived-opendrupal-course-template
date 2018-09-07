@@ -2,13 +2,12 @@
 @import "../../node_modules/reveal.js/css/theme/template/mixins";
 @import "../../node_modules/reveal.js/css/theme/template/settings";
 
-// For now, use the white theme.
+// Using white theme for base styling
 @import "../../node_modules/reveal.js/css/theme/source/white";
 
 
 // Drupal colours
 $c-drupal-blue-dark: #0678BE;
-$c-drupal-blue-light: #53B0EB;
 $c-drupal-blue-light: #53B0EB;
 $c-drupal-yellow-light: #E6FCB6;
 $c-drupal-orange: #FFE69F;
@@ -17,23 +16,45 @@ $c-drupal-green-lime: #96BC44;
 $c-drupal-red: #EBCCCC;
 
 // Grayscale colours
-$c-off-black: #222222;
+$c-off-black: #333;
+$c-white: white;
+$c-black: black;
 
 .reveal {
   color: $c-off-black;
 
   h1 {
-    color: $c-drupal-blue-dark;
-    text-shadow: 1px 1px 0px lighten($c-drupal-blue-dark, 40%);
     font-size: 2em;
   }
 
+  .slide-background {
+    background: url('../assets/drupal-8-logo.svg') no-repeat, $c-white;
+    background-size: 100px;
+    background-position: bottom 14px left 14px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    .slide-background {
+      background: $c-white;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $c-drupal-blue-dark;
+    text-shadow: 0px 1px 0px darken($c-drupal-blue-dark, 10%);
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: none;
+  }
+
   a {
-    color: $c-drupal-blue-light;
-    text-decoration: underline dotted transparentize($c-drupal-blue-light, 0.1);
+    color: $c-drupal-blue-dark;
+    text-decoration: underline dotted transparentize($c-drupal-blue-light, 0.3);
+    transition: 0.2s;
 
     &:hover {
-      text-decoration: underline $c-drupal-blue-light;
+      text-decoration: underline $c-drupal-blue-dark;
+      color: $c-drupal-blue-dark;
+      transition: 0.2s;
     }
   }
 
@@ -59,6 +80,14 @@ $c-off-black: #222222;
     padding: 12px 16px;
     border-left: 8px solid darken($c-drupal-red, 20%);
     border-radius: 4px;
+  }
+
+  .progress {
+    height: 5px;
+  }
+
+  .controls-arrow {
+    color: $c-drupal-blue-dark;
   }
 
 
