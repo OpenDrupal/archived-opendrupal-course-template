@@ -4,12 +4,12 @@
   "description": "Open Drupal slide foundation",
   "main": "readme.md",
   "dependencies": {
-    "gulp": "^3.9.1",
     "reveal.js": "^3.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
     "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
   },
   "scripts": {
