@@ -37,8 +37,8 @@ $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
 $heading1Size: 2.0em;
-$heading2Size: 1.6em;
-$heading3Size: 1.3em;
+$heading2Size: 1.3em;
+$heading3Size: 1.1em;
 $heading4Size: 1.0em;
 
 section.has-dark-background {
@@ -70,6 +70,10 @@ section.has-dark-background {
     text-shadow: 0px 1px 0px darken($c-drupal-blue-dark, 10%);
     font-family: 'Ubuntu', sans-serif;
     text-transform: none;
+  }
+
+  p {
+    text-align: left;
   }
 
   a {
@@ -119,6 +123,44 @@ section.has-dark-background {
     img {
       border-width: 0;
       box-shadow: none;
+    }
+
+    &.layout-title-page {
+      p {
+        text-align: center;
+        font-size: $heading2Size;
+      }
+    }
+
+    &.layout-two-col {
+      ul, p > ul {
+        column-count: 2;
+        column-gap: 2em;
+      }
+
+      ul > li > ul,
+      ul > ol > ul {
+        column-count: 1;
+      }
+    }
+
+    &.layout-three-col {
+      ul, p > ul {
+        column-count: 3;
+        column-gap: 2em;
+      }
+
+      ul > li > ul,
+      ul > ol > ul {
+        column-count: 1;
+      }
+    }
+
+    &.layout-two-col li,
+    &.layout-three-col li {
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
     }
 
   }
