@@ -8,6 +8,8 @@ Course attendees like to work on realistic cases. Having a story to work on, hel
 --vv--
 
 # Outline
+<!-- .slide: class="layout-two-col"-->
+
 - Lesson 1
   - Outline
   - Getting started
