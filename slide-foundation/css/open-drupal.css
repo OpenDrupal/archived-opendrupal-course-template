@@ -294,9 +294,6 @@ body {
   font-family: 'Ubuntu', sans-serif;
   text-transform: none; }
 
-.reveal p {
-  text-align: left; }
-
 .reveal a {
   color: #0678BE;
   text-decoration: underline dotted rgba(83, 176, 235, 0.7);
@@ -335,7 +332,6 @@ body {
   box-shadow: none; }
 
 .reveal section.layout-title-page p {
-  text-align: center;
   font-size: 1.3em; }
 
 .reveal section.layout-two-col ul, .reveal section.layout-two-col p > ul {

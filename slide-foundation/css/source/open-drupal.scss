@@ -101,10 +101,6 @@ section.has-dark-background {
     text-transform: none;
   }
 
-  p {
-    text-align: left;
-  }
-
   a {
     color: $c-drupal-blue-dark;
     text-decoration: underline dotted transparentize($c-drupal-blue-light, 0.3);
@@ -156,7 +152,6 @@ section.has-dark-background {
 
     &.layout-title-page {
       p {
-        text-align: center;
         font-size: $heading2Size;
       }
     }
