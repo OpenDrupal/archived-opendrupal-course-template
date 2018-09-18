@@ -263,6 +263,27 @@ body {
   background-size: 100px;
   background-position: bottom 14px left 14px; }
 
+.reveal .copyright {
+  position: fixed;
+  height: 26px;
+  width: 100%;
+  bottom: 3px;
+  left: 0;
+  z-index: 1;
+  font-size: 40%;
+  text-align: left;
+  background-color: #53B0EB; }
+  .reveal .copyright img {
+    vertical-align: middle; }
+  .reveal .copyright .logo {
+    padding: 3px 10px;
+    height: 18px; }
+  .reveal .copyright .license {
+    padding-left: 10px; }
+
+.reveal .controls {
+  bottom: 30px; }
+
 @media screen and (max-width: 1500px) {
   .reveal .slide-background {
     background: white; } }
