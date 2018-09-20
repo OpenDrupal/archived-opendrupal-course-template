@@ -3,7 +3,8 @@
 @import "../../node_modules/reveal.js/css/theme/template/settings";
 
 // Include theme-specific fonts
-@import url(../../node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+@import "../assets/font/source-sans-pro/source-sans-pro.css";
+@import "../assets/font/ubuntu-font-family/ubuntu-font-family.css";
 
 // Drupal colours
 $c-drupal-blue-dark: #0678BE;
@@ -26,7 +27,7 @@ $mainColor: $c-off-black;
 $headingColor: $c-off-black;
 
 $mainFontSize: 36px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Ubuntu', Helvetica, sans-serif;
 $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
@@ -97,7 +98,6 @@ section.has-dark-background {
   h1, h2, h3, h4, h5, h6 {
     color: $c-drupal-blue-dark;
     text-shadow: 0px 1px 0px darken($c-drupal-blue-dark, 10%);
-    font-family: 'Ubuntu', sans-serif;
     text-transform: none;
   }
 
