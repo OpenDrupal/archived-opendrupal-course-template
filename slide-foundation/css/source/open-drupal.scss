@@ -62,6 +62,7 @@ section.has-dark-background {
     left: 0;
     z-index: 1;
     font-size: 40%;
+    line-height: 26px;
     text-align: left;
     background-color: $c-drupal-blue-light;
 
@@ -70,7 +71,8 @@ section.has-dark-background {
     }
 
     .logo {
-      padding: 3px 10px;
+      padding: 0 10px;
+      margin-top: -4px;
       height: 18px;
     }
 

@@ -267,12 +267,14 @@ body {
   left: 0;
   z-index: 1;
   font-size: 40%;
+  line-height: 26px;
   text-align: left;
   background-color: #53B0EB; }
   .reveal .copyright img {
     vertical-align: middle; }
   .reveal .copyright .logo {
-    padding: 3px 10px;
+    padding: 0 10px;
+    margin-top: -4px;
     height: 18px; }
   .reveal .copyright .license {
     float: right; }
