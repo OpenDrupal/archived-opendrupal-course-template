@@ -1,10 +1,10 @@
 {
   "name": "od-course-template-slide-foundation",
   "version": "1.0.0",
-  "description": "Open Drupal slide foundation",
+  "description": "OpenDrupal slide foundation",
   "main": "readme.md",
   "dependencies": {
-    "reveal.js": "^4.3.0"
+    "reveal.js": "^4.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
